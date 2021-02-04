@@ -1,0 +1,17 @@
+.section-layout {
+  margin: 120px auto 0;
+  max-width: 1110px;
+  padding: 0 20px;
+
+  &-title {
+    width: 57%;
+    color: #000000;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 65px;
+    letter-spacing: -0, 03em;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+}

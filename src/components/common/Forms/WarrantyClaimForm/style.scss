@@ -1,0 +1,56 @@
+.warranty-form {
+  margin-top: 60px;
+
+  &-disclaimer {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #000;
+  }
+
+  &-type {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-total-days {
+    font-size: 26px;
+    line-height: 40px;
+    color: #000;
+  }
+
+  &-submit {
+    width: 400px;
+  }
+
+  &-group {
+    margin: 0;
+    padding: 0;
+  }
+
+  &-columns {
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 30px;
+  }
+
+  &-column {
+    flex-basis: 100%;
+
+    padding: 0 15px;
+  }
+
+  &-select,
+  &-date-picker {
+    width: 100%;
+  }
+
+  &-label {
+    font-size: 16px;
+  }
+}
+
+.warranty-success-text {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,134 @@
+{
+  "extends": ["tslint:latest", "tslint-eslint-rules", "tslint-react"],
+  "defaultSeverity": "error",
+  "rules": {
+    "indent": {
+      "options": ["spaces", 2]
+    },
+    "max-line-length": [true, { "limit": 120 }],
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          {
+            "name": "static field",
+            "kinds": [
+              "public-static-field",
+              "protected-static-field",
+              "private-static-field"
+            ]
+          },
+          {
+            "name": "instance field",
+            "kinds": [
+              "public-instance-field",
+              "protected-instance-field",
+              "private-instance-field"
+            ]
+          },
+          {
+            "name": "static method",
+            "kinds": [
+              "public-static-method",
+              "private-static-method",
+              "protected-static-method",
+              "public-static-accessor",
+              "protected-static-accessor",
+              "private-static-accessor"
+            ]
+          },
+          {
+            "name": "instance method",
+            "kinds": [
+              "public-constructor",
+              "protected-constructor",
+              "private-constructor",
+              "public-instance-method",
+              "protected-instance-method",
+              "private-instance-method",
+              "public-instance-accessor",
+              "protected-instance-accessor",
+              "private-instance-accessor"
+            ]
+          }
+        ]
+      }
+    ],
+    "no-consecutive-blank-lines": {
+      "options": [1]
+    },
+    "object-literal-key-quotes": {
+      "options": ["as-needed"]
+    },
+    "quotemark": {
+      "options": ["single", "jsx-double"]
+    },
+    "trailing-comma": {
+      "options": {
+        "multiline": "never",
+        "singleline": "never"
+      }
+    },
+    "typedef": {
+      "options": [
+        "call-signature",
+        "arrow-call-signature",
+        "parameter",
+        "property-declaration",
+        "member-variable-declaration"
+      ]
+    },
+    "object-curly-spacing": {
+      "options": ["always"]
+    },
+    "array-bracket-spacing": {
+      "options": ["never"]
+    },
+    "block-spacing": {
+      "options": ["always"]
+    },
+    "brace-style": [
+      true,
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "no-unused-expression": [true, "allow-fast-null-checks"],
+    "no-multi-spaces": true,
+    "no-extra-semi": true,
+    "no-shadowed-variable": true,
+    "no-var-requires": false,
+    "semicolon": true,
+    "interface-name": true,
+    "one-line": true,
+    "no-implicit-dependencies": true,
+    "no-this-assignment": true,
+    "interface-over-type-literal": false,
+    "jsx-boolean-value": ["never"],
+    "jsx-no-multiline-js": false,
+    "no-console": false,
+    "no-debugger": false,
+    "no-submodule-imports": false,
+    "no-default-export": true,
+    "no-any": true,
+    "no-internal-module": true,
+    "no-magic-numbers": [true, -1, 0, 1, 2, 3],
+    "no-non-null-assertion": true,
+    "no-parameter-reassignment": true,
+    "ban-comma-operator": true,
+    "no-conditional-assignment": true,
+    "no-duplicate-super": true,
+    "no-duplicate-switch-case": true,
+    "no-empty": false,
+    "no-floating-promises": false,
+    "no-invalid-template-strings": true,
+    "no-sparse-arrays": true,
+    "no-string-throw": true,
+    "no-var-keyword": true,
+    "prefer-object-spread": true,
+    "triple-equals": true,
+    "cyclomatic-complexity": [true, 10],
+    "jsx-wrap-multiline": false
+  }
+}

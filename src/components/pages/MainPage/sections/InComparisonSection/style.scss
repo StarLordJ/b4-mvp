@@ -1,0 +1,78 @@
+.comparison-section {
+  &__companies-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__companies-card-wrapper {
+    flex-basis: 49%;
+  }
+
+  &__charts {
+    margin-top: 100px;
+
+    &-title {
+      color: #000000;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: -0.4000000059604645px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  }
+
+  &__chart-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    &-description {
+      color: #111111;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 39px;
+      letter-spacing: -0.4000000059604645px;
+      text-align: center;
+    }
+
+    &-pre-description {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: -0.4000000059604645px;
+      text-align: left;
+      opacity: 0.5;
+    }
+  }
+
+  &__chart-horizontal-chart-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    color: #ffffff;
+
+    & > span {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 28px;
+      letter-spacing: -0.4px;
+      color: #ffffff;
+    }
+  }
+}

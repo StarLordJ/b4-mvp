@@ -1,0 +1,1 @@
+export { WarriantyClaimFormOpenButton } from './WarriantyClaimFormOpenButton';

@@ -1,0 +1,1 @@
+export { HorizontalChart } from './HorizontalChart';

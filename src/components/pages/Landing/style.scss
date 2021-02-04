@@ -1,0 +1,327 @@
+.landing {
+  color: #000000;
+  max-width: 100%;
+
+  &-section-title {
+    font-family: 'Museo Sans Cyrl', Arial, sans-serif;
+    font-size: 54px;
+    color: #000;
+  }
+}
+
+.landing-comparsion {
+  text-align: center;
+  margin-bottom: 100px;
+
+  &-header {
+    color: #000;
+    margin-bottom: 80px;
+
+    &-title {
+      font-family: 'Museo Sans Cyrl', Arial, sans-serif;
+      font-weight: bold;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    &-subtitle {
+      font-family: 'TT Norms', Arial, sans-serif;
+      font-size: 36px;
+      font-weight: 300;
+      text-transform: uppercase;
+      display: inline-flex;
+
+      &-icon {
+        margin-left: 10px;
+        color: #4bd40b;
+      }
+    }
+  }
+}
+
+.landing-comparsion-section {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  .landing-section-title {
+    margin-bottom: 30px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1150px;
+    padding: 0;
+  }
+}
+
+.landing-comparsion-card {
+  padding: 60px 30px;
+  border-radius: 25px;
+  box-shadow: 0px 9px 45px rgba(55, 66, 250, 0.16);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &-not-bad {
+    background-image: url('/images/landing/bg-01.svg');
+
+    @media screen and (min-width: 1200px) {
+      background-size: 115%;
+    }
+  }
+
+  &-but {
+    background-image: url('/images/landing/bg-02.svg');
+  }
+
+  &-you-can-better {
+    background-image: url('/images/landing/bg-03.svg');
+
+    @media screen and (min-width: 1200px) {
+      background-size: 115%;
+    }
+  }
+
+  &-top {
+    flex-wrap: wrap;
+
+    &.landing-comparsion-card-not-bad {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 40px;
+
+      &::after {
+        content: '';
+        height: 2px;
+        width: 100%;
+        margin-top: 40px;
+        background-color: rgba(255, 255, 255, 0.25);
+      }
+    }
+  }
+
+  &-header {
+    color: #fff;
+    font-family: 'Museo Sans Cyrl', Arial, sans-serif;
+    margin-bottom: 60px;
+
+    &-title {
+      font-weight: 500;
+      font-size: 28px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    &-subtitle {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      opacity: 0.6;
+    }
+  }
+}
+
+.landing-features {
+  font-size: 35px;
+
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+
+  color: #fff;
+
+  @media screen and (min-width: 992px) {
+    flex-direction: row;
+  }
+
+  &-item {
+    font-family: 'TT Norms', Arial, sans-serif;
+
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+
+      @media screen and (min-width: 992px) {
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      min-width: 250px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      min-width: 250px;
+    }
+
+    &-label {
+      font-size: 0.4em;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+      opacity: 0.9;
+
+      @media screen and (min-width: 992px) {
+        font-size: 0.45em;
+        height: 40px;
+      }
+
+      .landing-comparsion-card-you-can-better & {
+        height: auto;
+      }
+    }
+
+    &-text {
+      font-size: 0.6em;
+      font-weight: bold;
+
+      line-height: 1;
+
+      @media screen and (min-width: 992px) {
+        font-size: 0.75em;
+      }
+
+      @media screen and (min-width: 1200px) {
+        font-size: 1em;
+      }
+    }
+  }
+
+  .landing-comparsion-card-top & {
+    &-item {
+      &-text {
+        font-weight: 700;
+        font-size: 1.1em;
+
+        @media screen and (min-width: 992px) {
+          font-size: 1.5em;
+          font-weight: 800;
+        }
+
+        @media screen and (min-width: 1200px) {
+          font-size: 1.85em;
+        }
+      }
+    }
+  }
+}
+
+.landing-cta {
+  text-align: center;
+
+  .landing-section-title {
+    margin-bottom: 50px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 100px;
+    }
+  }
+
+  &-benefits {
+    display: flex;
+    margin: 0 auto 80px;
+    justify-content: center;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+      min-width: 250px;
+      flex-direction: row;
+    }
+  }
+
+  &-benefit {
+    padding: 20px 75px;
+
+    font-size: 26px;
+    font-family: 'TT Norms', Arial, sans-serif;
+
+    &-icon {
+      margin-bottom: 20px;
+
+      .dont-miss & {
+        color: #fcb316;
+      }
+
+      .guarantee & {
+        color: #2fb7f5;
+      }
+    }
+  }
+
+  &-button {
+    &-label {
+      font-size: 20px;
+      font-family: 'TT Norms', Arial, sans-serif;
+      margin-bottom: 20px;
+      display: block;
+      text-align: center;
+    }
+  }
+
+  margin-bottom: 100px;
+}
+
+.landing-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 20px;
+  margin-bottom: 100px;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    padding: 0 60px;
+    flex-direction: row;
+  }
+
+  .landing-section-title {
+    margin-bottom: 60px;
+    text-align: center;
+  }
+}
+
+.landing-highlight {
+  text-align: center;
+  flex-basis: calc(50% - 24px);
+
+  border: 2px solid #e1dbf0;
+  border-radius: 35px;
+  padding: 17px 50px;
+
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+  &:nth-child(1n + 1) {
+    margin-right: 0;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 24px;
+    }
+  }
+
+  &-icon {
+    width: 66px;
+    height: 66px;
+    margin-bottom: 15px;
+    color: #000;
+  }
+
+  &-text {
+    font-family: 'TT Norms', Arial, sans-serif;
+    font-size: 22px;
+  }
+}

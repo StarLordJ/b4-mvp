@@ -1,0 +1,1 @@
+export { TendersList } from './TendersList';

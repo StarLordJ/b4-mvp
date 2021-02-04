@@ -1,0 +1,32 @@
+.opportunity-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  &__icon-wrapper {
+    margin-bottom: 17px;
+  }
+
+  &__title {
+    color: #111111;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 46px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+    margin-bottom: 17px;
+  }
+
+  &__description {
+    color: #111111;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+    opacity: 0.5;
+  }
+}

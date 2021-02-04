@@ -1,0 +1,64 @@
+.comparison-company-card {
+  height: 200px;
+  border: 2px solid #e1e4eb;
+  background: #f8f8f8;
+  border-radius: 35px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__usage {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 2px;
+    border: 2px solid;
+    border-radius: 15px;
+    width: fit-content;
+    padding: 0 15px;
+
+    &--is-using {
+      border-color: rgba(50, 234, 46, 0.5);
+
+      & > .comparison-company-card__usage-indicator {
+        background-color: #95f193;
+      }
+    }
+
+    &--is-not-using {
+      border-color: rgba(134, 134, 134, 0.5);
+
+      & > .comparison-company-card__usage-indicator {
+        background-color: #cbcbcb;
+      }
+    }
+
+    &-indicator {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 17px;
+    }
+
+    &-text {
+      color: #111111;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 46px;
+      letter-spacing: -0.6000000238418579px;
+      text-align: left;
+    }
+  }
+
+  &__company-name {
+    color: #111111;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+  }
+}

@@ -1,0 +1,1 @@
+export { InComparisonSection } from './InComparisonSection';

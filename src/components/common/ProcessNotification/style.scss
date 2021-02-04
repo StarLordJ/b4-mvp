@@ -1,0 +1,23 @@
+.process-notification {
+  margin-bottom: 30px;
+  &-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      align-items: self-start;
+    }
+  }
+
+  &-controls {
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+    }
+  }
+
+  &-badge {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+}

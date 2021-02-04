@@ -1,0 +1,50 @@
+.upload-documents-form {
+  &-row {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: -12px;
+    margin-right: -12px;
+
+    > * {
+      background: #fff;
+      border: 1px solid #ececf4;
+      border-radius: 20px;
+      padding: 30px;
+    }
+  }
+
+  &-dropzone-col {
+    width: 50%;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  &-disclaimer-col {
+    width: 50%;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+
+.documents-disclaimer {
+  &-title {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+
+  &-list {
+    font-size: 16px;
+    font-family: 'TT Norms', Arial, sans-serif;
+  }
+
+  &-list-item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.upload-success-text {
+  margin: 0;
+  padding: 0;
+}

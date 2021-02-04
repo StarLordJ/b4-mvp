@@ -1,0 +1,1 @@
+export { WarrantyClaimForm } from './WarrantyClaimForm';

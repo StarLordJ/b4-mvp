@@ -1,0 +1,21 @@
+// тут происходит оверрайд стилей под нужды дизайна
+.rs-input,
+.rs-picker-default .rs-picker-toggle.rs-btn {
+  padding: 14px;
+  border-radius: 15px;
+  border-width: 2px;
+  width: 100%;
+}
+
+.rs-picker-default .rs-picker-toggle.rs-btn .rs-picker-toggle-caret,
+.rs-picker-default .rs-picker-toggle.rs-btn .rs-picker-toggle-clean {
+  top: 30%;
+}
+
+.rs-btn-subtle {
+  color: #567df4;
+
+  &:hover {
+    color: #0f46ee;
+  }
+}

@@ -1,0 +1,13 @@
+.badge {
+  padding: 5px 17px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: 'TT Norms', Arial, sans-serif;
+  border-radius: 40px;
+  line-height: 1.2;
+  
+  &.skin-grey {
+    background-color: #ECECF4;
+    color: #5e5e62;
+  }
+}

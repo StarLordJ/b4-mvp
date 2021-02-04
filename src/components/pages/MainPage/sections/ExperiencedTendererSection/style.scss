@@ -1,0 +1,25 @@
+.tender-section {
+  &-description {
+    color: #000000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &-cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 150px;
+  }
+
+  &-card-wrapper {
+    flex-basis: 49%;
+  }
+
+  &__card-complex-icon-empty {
+    width: 13px;
+  }
+}

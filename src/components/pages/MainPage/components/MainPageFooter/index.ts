@@ -1,0 +1,1 @@
+export { MainPageFooter } from './MainPageFooter';

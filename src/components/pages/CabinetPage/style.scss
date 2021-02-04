@@ -1,0 +1,28 @@
+.mvp-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+  .process-notification {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.mvp-action-cards {
+  margin-bottom: 30px;
+}
+
+.mvp-action-card {
+  margin-left: auto;
+  margin-right: auto;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &-icon {
+    color: #3d6af4;
+  }
+}

@@ -1,0 +1,1 @@
+export { MainPageHeader } from './MainPageHeader';

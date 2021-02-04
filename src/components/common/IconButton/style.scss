@@ -1,0 +1,72 @@
+.icon-button {
+  display: inline-flex;
+  height: 50px !important;
+  min-width: 50px !important;
+  border: 0 none;
+  padding: 14px !important;
+  justify-content: center;
+  align-items: center;
+  transition: all 150ms ease-in;
+  border-radius: 15px;
+  overflow: visible;
+
+  &.skin-primary {
+    background-color: #3742FA;
+    color: #fff;
+
+    &:hover {
+      background-color: darken(#3742FA, 5%);
+    }
+
+    &:active {
+      background-color: darken(#3742FA, 15%);
+    }
+  }
+
+  &.skin-light {
+    background-color: #fcf4e1;
+
+    &:hover {
+      background-color: #f9eed6;
+    }
+
+    &:active {
+      background-color: darken(#f9eed6, 5%);
+    }
+  }
+
+  &.skin-default {
+    background-color: #ECECF4;
+
+    &:hover {
+      background-color: darken(#ECECF4, 5%);
+    }
+
+    &:active {
+      background-color: darken(#ECECF4, 10%);
+    }
+  }
+
+  &.skin-orange {
+    background-color: #FFA700;
+    color: #fff;
+    border: 2px solid transparent;
+
+    &:hover {
+      background-color: lighten(#FFA700, 5%);
+    }
+
+    &:active {
+      background-color: lighten(#FFA700, 10%);
+    }
+
+    &.is-outlined {
+      color: #FFA700;
+      background-color: #fff;
+
+      &:hover {
+        border-color: #FFA700;
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.accounts-list {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #ececf4;
+      margin-bottom: 25px;
+    }
+
+    &--column {
+      display: flex;
+      flex-direction: column;
+
+      &:first-child {
+        width: 300px;
+      }
+
+      &-name {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #242232;
+      }
+
+      &-value {
+        font-family: TT Norms;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #242232;
+      }
+
+      &-button {
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        color: #567df4;
+        align-self: center;
+        margin-top: -20px;
+
+        &:hover {
+          color: rgba(#567df4, 0.9);
+        }
+
+        &__icon path {
+          fill: #567df4;
+        }
+
+        &__text {
+          margin-left: 12px;
+        }
+
+        &-wrap {
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}
+
+.accounts-list-wrapper {
+  margin-top: 50px;
+}

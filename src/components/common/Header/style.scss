@@ -1,0 +1,127 @@
+.page-header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  height: 82px;
+  z-index: 101;
+  background-color: inherit;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: inherit;
+  }
+
+  &__logo {
+    width: 161px;
+    height: 69px;
+    margin-left: -10px;
+  }
+
+  &__company {
+    margin-left: -90px;
+  }
+}
+
+.header-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+
+  position: relative;
+  z-index: 1000;
+
+  order: 3;
+  width: 100%;
+
+  .rs-dropdown-menu {
+    min-width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    width: auto;
+    order: initial;
+  }
+}
+
+.header-dropdown-toggle {
+  padding: 0 !important;
+  color: #000;
+
+  display: flex;
+  align-items: center;
+}
+
+.header-dropdown-icon {
+  .rs-dropdown-open & {
+    transform: rotate(-180deg);
+  }
+}
+
+.header-dropdown-label {
+  font-weight: 500;
+  font-size: 18px;
+  margin-right: 8px;
+
+  color: #000000;
+}
+
+.header-controls {
+  white-space: nowrap;
+
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  justify-content: center;
+
+  @media screen and (min-width: 576px) {
+    width: auto;
+
+    order: initial;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.header-controls-button {
+  position: relative;
+  min-width: auto;
+
+  &:not(:last-child) {
+    margin-right: 40px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      width: 2px;
+      height: 31px;
+      background-color: #ececf4;
+      border-radius: 2px;
+      right: -20px;
+    }
+  }
+
+  &.favorites {
+    color: #ffa700;
+  }
+
+  &.logout {
+    color: #567df4;
+  }
+
+  &.login {
+    //
+  }
+}

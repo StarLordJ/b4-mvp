@@ -1,0 +1,27 @@
+.tender-card {
+  background: #ede6fe;
+  border: 2px solid #e1dbf0;
+  box-sizing: border-box;
+  border-radius: 35px;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+
+  &-icon {
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-description {
+    color: #111111;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: -0.6000000238418579px;
+    text-align: left;
+    max-width: 60%;
+  }
+}
